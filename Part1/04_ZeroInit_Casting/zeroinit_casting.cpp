@@ -33,4 +33,12 @@ int main()
 	cout << "Casting long: " << myLong << endl;
 
 
+
+	cout << "----------------- Floating-Point Numbers -------------- \n";
+
+	double myDoubleInf { numeric_limits<double>::infinity() };
+	double myDoubleNaN { numeric_limits<double>::quiet_NaN()};
+
+	cout << "Check myDoubleInf: " << isinf(myDoubleInf) << endl;
+	cout << "Check myDoubleNaN: " << isnan(myDoubleNaN) << endl;
 }
